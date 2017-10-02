@@ -1,0 +1,101 @@
+# # Add your Python code here. E.g.
+# from microbit import *
+
+
+# while True:
+#     display.scroll('I')
+#     sleep(2000)
+#     display.show(Image.HEART)
+#     display.scroll('EaRS')
+#     sleep(2000)
+
+from microbit import *
+
+# while True:
+    # if button_a.is_pressed():
+    #     display.show(Image.YES)
+    # elif button_b.is_pressed():
+    #     display.show(Image.NO)
+    # else:
+    #     display.show(Image.XMAS)
+index = 0
+l = []
+# display.show("2")
+# for x in range(0,8): 
+#     if button_a.is_pressed():
+#         l[x] = 1
+#     if button_b.is_pressed():
+#         l[x] = 0
+b = True
+foo = []
+while b:
+    if button_a.was_pressed():
+        l.append('0')
+        index += 1
+    if button_b.was_pressed():
+        l.append('1')
+        index += 1
+    if index > 7:
+        binary = ''.join(l)
+        display.scroll(binary)
+        b = False
+bi = 0
+var = 7
+for y in l:
+    #for i in range(7,-1,-1):
+    
+    bi += int(y)*(2**var)
+    var -= 1
+    #foo.append(b)
+display.scroll(str(bi))
+        
+        
+    
+# for y in l:
+    
+    # display.scroll(y)
+    
+# while True:
+#     gesture = accelerometer.current_gesture()
+#     if gesture == "face up":
+#         display.show(Image.HAPPY)
+#     else:
+#         display.show(Image.ANGRY)
+
+import random
+
+# answers = [
+#     "It is certain",
+#     "It is decidedly so",
+#     "Without a doubt",
+#     "Yes, definitely",
+#     "You may rely on it",
+#     "As I see it, yes",
+#     "Most likely",
+#     "Outlook good",
+#     "Yes",
+#     "Signs point to yes",
+#     "Reply hazy try again",
+#     "Ask again later",
+#     "Better not tell you now",
+#     "Cannot predict now",
+#     "Concentrate and ask again",
+#     "Don't count on it"
+#     "My reply is no",
+#     "My sources say no",
+#     "Outlook not so good",
+#     "Very doubtful",
+# ]
+
+# while True:
+#     display.scroll("I am")
+#     display.stop()
+#     if accelerometer.was_gesture("shake"):
+#         display.clear()
+#         sleep(1000)
+#         display.scroll(random.choice(answers))
+        
+        
+        
+
+display.clear()
