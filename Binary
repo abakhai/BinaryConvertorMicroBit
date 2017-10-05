@@ -1,6 +1,11 @@
 from microbit import * # Imports required microbit packages
 import random # Import random packages
 
+# Prequisites
+
+index = 0
+l = []
+
 # while True:
 #     display.scroll('I')
 #     sleep(2000)
@@ -15,8 +20,7 @@ import random # Import random packages
     #     display.show(Image.NO)
     # else:
     #     display.show(Image.XMAS)
-# index = 0
-# l = []
+
 # display.show("2")
 # for x in range(0,8): 
 #     if button_a.is_pressed():
