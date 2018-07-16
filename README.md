@@ -1,4 +1,4 @@
-# BinaryConvertorMicroBit
+# BinaryConverterMicroBit
 
 ## For use with the BBC MicroBit
 
